@@ -1,0 +1,12 @@
+---
+const {title,icon,text} = Astro.props;
+---
+
+<div class="border-2 w-[90%] my-2 rounded-lg bg-[color:var(--secondary)] text-slate-200 px-5 py-10 max-w-[426px] md:max-w-[300px] lg:max-w-[380px] xl:max-w-[470px] xl:my-0 xl:mx-0 xl:rounded-2xl xl:py-14 xl:px-7">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d={icon} />
+    </svg>
+    <h3 class="text-center text-[color:var(--accent)] text-xl pb-3 xl:text-3xl">{title}</h3>
+    <p class="text-center xl:text-lg">{text}</p>
+</div>
+

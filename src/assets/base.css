@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip {
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0 50%);
+  }
+}
+
+:root {
+  --primary: rgb(241, 241, 241);
+  --secondary: #202c39;
+  --accent: #499f68;
+  --gradient: linear-gradient(135deg, rgba(184, 74, 74, 0.4962359943977591) 0%, rgba(23, 40, 219, 0.5) 100%);
+}
+
+body {
+  background-color: var(--primary);
+}

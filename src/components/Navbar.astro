@@ -1,0 +1,15 @@
+---
+import NavbarItem from "../components/NavbarItem.astro"
+---
+
+<nav class="flex flex-col justify-center items-center sm:flex-row sm:justify-around p-4 fixed z-50 bg-[color:white] w-full border-b-[1px] border-[color:var(--accent)]">
+    <div>
+        <p class="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-[color:var(--accent)] tracking-wide">Logo</p>
+    </div>
+    <div class="mt-2 sm:mt-0 flex space-x-3 sm:space-x-6 md:space-x-9 lg:space-x-14">
+       <NavbarItem href="#header">Strona&nbsp;główna</NavbarItem>
+       <NavbarItem href="#aboutus">O&nbsp;nas</NavbarItem>
+       <NavbarItem href="#features">Oferta</NavbarItem>
+       <NavbarItem href="#contact">Kontakt</NavbarItem>
+    </div>
+</nav>

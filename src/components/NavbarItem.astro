@@ -1,0 +1,13 @@
+---
+    const {href} = Astro.props;
+---
+ 
+ <a href={href}>
+    <div class="sm:p-3 sm:hover:shadow-2xl transition-all cursor-pointer select-none group">
+        <p
+        class="text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-wide text-black group-hover:text-[color:var(--accent)]">
+            <slot />
+        </p>
+    </div>
+</a>
+
